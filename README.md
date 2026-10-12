@@ -130,11 +130,11 @@ The website uses CSS media queries to adapt to different screen sizes.
 
 ## Live Website
 
-Live URL: To be added after deployment.
+https://preetamsalunke.github.io/spice-garden-restaurant/
 
 ## GitHub Repository
 
-Repository URL: To be added after uploading to GitHub.
+https://github.com/PreetamSalunke/spice-garden-restaurant
 
 ## Author
 
