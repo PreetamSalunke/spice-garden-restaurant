@@ -1,0 +1,344 @@
+
+/* ==================================
+   CONTACT SECTION - SPICE GARDEN
+================================== */
+
+/* Main Contact Section */
+.contact {
+    width: 100%;
+    background-color: #FFF9F0;
+    padding: 100px 0;
+    scroll-margin-top: 30px;
+}
+
+/* Section Heading */
+.contact-heading {
+    max-width: 750px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+/* Small Subtitle */
+.contact-subtitle {
+    color: #B5833E;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Main Heading */
+.contact-heading h2 {
+    color: #173B2B;
+    font-size: clamp(30px, 3.5vw, 46px);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+/* Golden Heading Text */
+.contact-heading h2 span {
+    color: #B5833E;
+}
+
+/* Section Description */
+.contact-description {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Contact Layout */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+/* Left Side Information */
+.contact-info h3 {
+    color: #173B2B;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Intro Paragraph */
+.contact-intro {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* Contact Detail Row */
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+/* Contact Icons */
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    background-color: #F0E2CB;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+/* Contact Detail Heading */
+.contact-detail h4 {
+    color: #173B2B;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Contact Detail Text */
+.contact-detail p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Right Side Form Container */
+.contact-form-container {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 22px;
+}
+
+/* Field Labels */
+.form-group label {
+    display: block;
+    color: #173B2B;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+/* Inputs and Textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #D8DED9;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Input Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #B5833E;
+    box-shadow: 0 0 0 3px rgba(181, 131, 62, 0.15);
+}
+
+/* Textarea */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #173B2B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+/* Submit Button Hover */
+.submit-btn:hover {
+    background-color: #D9A75F;
+    color: #173B2B;
+    transform: translateY(-2px);
+}
+
+/* Keyboard Focus */
+.submit-btn:focus-visible {
+    outline: 3px solid #D9A75F;
+    outline-offset: 4px;
+}
+
+
+/* ==================================
+   CONTACT SUCCESS POPUP
+================================== */
+
+/* Hidden State */
+.success-overlay[hidden] {
+    display: none;
+}
+
+/* Dark Background Overlay */
+.success-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+/* Popup Card */
+.success-popup {
+    width: 100%;
+    max-width: 440px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+
+    animation: popupAppear 0.3s ease;
+}
+
+/* Success Checkmark */
+.success-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #E6F4EA;
+    color: #228B54;
+    font-size: 42px;
+    font-weight: 700;
+
+    animation: checkPop 0.4s ease;
+}
+
+/* Popup Heading */
+.success-popup h2 {
+    color: #173B2B;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+/* Popup Description */
+.success-popup p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Demo Notice */
+.success-popup .success-note {
+    color: #8A612C;
+    font-size: 13px;
+    background-color: #FFF5E6;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* Close Button */
+.success-close-btn {
+    width: 100%;
+    padding: 14px 24px;
+    background-color: #173B2B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.success-close-btn:hover {
+    background-color: #24583F;
+}
+
+.success-close-btn:focus-visible {
+    outline: 3px solid #D9A75F;
+    outline-offset: 4px;
+}
+
+/* Popup Animation */
+@keyframes popupAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes checkPop {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+    .success-popup {
+        padding: 30px 20px;
+    }
+
+    .success-popup h2 {
+        font-size: 21px;
+    }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .success-popup,
+    .success-icon {
+        animation: none;
+    }
+}
+

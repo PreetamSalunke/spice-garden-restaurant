@@ -1,0 +1,94 @@
+
+/* ==================================
+   WHY CHOOSE US - SPICE GARDEN
+================================== */
+
+/* Main Section */
+.why-choose-us {
+    width: 100%;
+    background-color: #173B2B;
+    padding: 100px 0;
+}
+
+/* Section Heading */
+.why-heading {
+    max-width: 750px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+/* Small Subtitle */
+.why-subtitle {
+    color: #D9A75F;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Main Heading */
+.why-heading h2 {
+    color: #FFFFFF;
+    font-size: clamp(30px, 3.5vw, 46px);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+/* Highlighted Heading */
+.why-heading h2 span {
+    color: #D9A75F;
+}
+
+/* Description */
+.why-description {
+    color: #DCE7DF;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Features Grid */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* Individual Feature Card */
+.why-card {
+    background-color: #244B39;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Card Hover */
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature Icon */
+.why-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+/* Card Title */
+.why-card h3 {
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Card Description */
+.why-card p {
+    color: #DCE7DF;
+    font-size: 15px;
+    line-height: 1.8;
+}

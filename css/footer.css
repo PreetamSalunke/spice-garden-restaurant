@@ -1,0 +1,110 @@
+
+/* ==================================
+   FOOTER - SPICE GARDEN
+================================== */
+
+/* Main Footer */
+.footer {
+    width: 100%;
+    background-color: #102B20;
+    color: #FFFFFF;
+    padding: 75px 0 0;
+}
+
+/* Footer Columns */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+    gap: 60px;
+    padding-bottom: 55px;
+}
+
+/* Restaurant Logo */
+.footer-brand h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/* Logo Highlight */
+.footer-brand h2 span {
+    color: #D9A75F;
+}
+
+/* Restaurant Description */
+.footer-brand p {
+    color: #D6E0D9;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 350px;
+}
+
+/* Footer Headings */
+.footer-links h3,
+.footer-contact h3 {
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Quick Links List */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Quick Links Items */
+.footer-links li {
+    margin-bottom: 14px;
+}
+
+/* Quick Links */
+.footer-links a {
+    color: #D6E0D9;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease,
+                padding-left 0.3s ease;
+}
+
+/* Quick Links Hover */
+.footer-links a:hover {
+    color: #D9A75F;
+    padding-left: 5px;
+}
+
+/* Contact Information */
+.footer-contact p {
+    color: #D6E0D9;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+    border-top: 1px solid #365448;
+    padding: 25px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Copyright Text */
+.footer-bottom p {
+    color: #D6E0D9;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Footer Keyboard Focus */
+.footer a:focus-visible {
+    outline: 3px solid #D9A75F;
+    outline-offset: 4px;
+}

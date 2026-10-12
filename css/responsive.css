@@ -1,0 +1,304 @@
+/* =========================================
+   SPICE GARDEN - RESPONSIVE DESIGN
+========================================= */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1024px) {
+
+    .hero-container,
+    .about-container {
+        gap: 35px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .why-grid {
+        gap: 20px;
+    }
+
+    .contact-container {
+        gap: 35px;
+    }
+
+    .footer-container {
+        gap: 30px;
+    }
+}
+
+/* Mobile and small tablets */
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /* Navigation */
+
+    /* Navigation */
+    .navbar {
+        position: relative;
+        width: 90%;
+        min-width: 0;
+        min-height: 70px;
+        gap: 12px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 22px;
+        white-space: nowrap;
+    }
+
+    /* Hide desktop reservation button */
+    .navbar>.nav-btn {
+        display: none;
+    }
+
+    /* Hamburger Button */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        padding: 8px;
+        background-color: #244B39;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 23px;
+        height: 2px;
+        background-color: #FFFFFF;
+        border-radius: 2px;
+    }
+
+    /* Mobile Dropdown */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #173B2B;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 15px 20px 25px;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        z-index: 15;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 5px;
+    }
+
+    /* Mobile Book a Table */
+    .mobile-reservation {
+        display: block;
+    }
+
+    .nav-links .nav-btn {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px 20px;
+        background-color: #D9A75F;
+        color: #173B2B;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: 65px 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    /* About */
+    .about {
+        padding: 70px 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    /* Menu */
+    .menu {
+        padding: 70px 0;
+    }
+
+    .menu-heading {
+        margin-bottom: 35px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    /* Why Choose Us */
+    .why-choose-us {
+        padding: 70px 0;
+    }
+
+    .why-heading {
+        margin-bottom: 35px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 70px 0;
+    }
+
+    .contact-heading {
+        margin-bottom: 35px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-form-container {
+        padding: 30px;
+    }
+
+    /* Footer */
+    .footer {
+        padding-top: 55px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-btn {
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-height: 300px;
+    }
+
+    .about,
+    .menu,
+    .why-choose-us,
+    .contact {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .about-image img {
+        height: 270px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card img {
+        height: 220px;
+    }
+
+    .why-card {
+        padding: 30px 22px;
+    }
+
+    .contact-form-container {
+        padding: 22px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

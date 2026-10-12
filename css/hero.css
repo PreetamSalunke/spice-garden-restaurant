@@ -1,0 +1,126 @@
+
+/* ==================================
+   HERO SECTION - SPICE GARDEN
+================================== */
+
+/* Main Hero Background */
+.hero {
+    width: 100%;
+    background-color: #173B2B;
+    padding: 90px 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+/* Hero Layout */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* Left Side Text */
+.hero-content {
+    flex: 1;
+    max-width: 580px;
+}
+
+/* Small Welcome Text */
+.hero-subtitle {
+    color: #D9A75F;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+/* Main Heading */
+.hero-content h1 {
+    color: #FFFFFF;
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+/* Highlighted Heading Text */
+.hero-content h1 span {
+    color: #D9A75F;
+}
+
+/* Hero Description */
+.hero-description {
+    color: #E0E8E2;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* Buttons Container */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* Common Hero Buttons */
+.hero-btn {
+    display: inline-block;
+    padding: 14px 26px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+/* Explore Our Menu Button */
+.primary-btn {
+    background-color: #D9A75F;
+    color: #173B2B;
+}
+
+.primary-btn:hover {
+    background-color: #F0C581;
+    color: #173B2B;
+    transform: translateY(-3px);
+}
+
+/* Book a Table Button */
+.secondary-btn {
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+/* Book a Table Hover */
+.secondary-btn:hover {
+    background-color: #D9A75F;
+    border-color: #D9A75F;
+    color: #173B2B;
+    transform: translateY(-3px);
+}
+
+/* Right Side Image Container */
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* Food Image */
+.hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}

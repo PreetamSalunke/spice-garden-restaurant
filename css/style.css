@@ -1,0 +1,71 @@
+
+/* ==================================
+   GLOBAL STYLES - SPICE GARDEN
+================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Global Colors */
+:root {
+    --primary-color: #173B2B;
+    --secondary-color: #D9A75F;
+    --background-color: #FFF9F0;
+    --text-color: #333333;
+    --white: #FFFFFF;
+}
+
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML */
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Common Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Keyboard Accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 4px;
+}
